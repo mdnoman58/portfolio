@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio - CodeCreators</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="header">
+        <div class="new-logo">
+            <p class="nav-name">Logo</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#Home" class="new-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="new-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#project" class="new-link">Project</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="new-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="mode">
+            <div class="moon-sun" id="toggle-switch">
+                <i class="fa fa-moon" id="moon"></i>
+                <i class="fa fa-sun" id="sun"></i>
+            </div>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="fa fa-bars" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="wrapper">
+        <section class="featured-box" id="home">
+            <div class="featured-text">
+                <div class="hello">
+                    <p>Hello, I'm</p>
+                </div>
+                <div class="featured-name">
+                    <span class="typedText"></span>
+                </div>
+                <div class="text-info">
+                    <p>My name is Noman, I'm a web developer with 1+ year experience.</p>
+                </div>
+                <div class="text-btn">
+                    <button class="btn hire-btn">Hire Me</button>
+                    <button class="btn">Download CV</button>
+                </div>
+                <div class="socical_icons">
+                    <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+<div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+<div class="icon"><i class="fa-brands fa-facebook"></i></div>
+<div class="icon"><i class="fa-brands fa-github"></i></div>
+
+                </div>
+            </div>
+            <div class="featured-image">
+                <div class="image">
+                    <img src=".vscode/boyos.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1>About me</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="about-info">
+                        <figure class="about me">
+                            <figcaption>
+                                <img src="" alt="" class="profile">
+                                <h2>Web developer</h2>
+                                <p>My Name is Noman, I'm a web developer</p>
+                            </figcaption>
+                            <button class="about-me-btn">Hire Me</button>
+                        </figure>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-box">
+                        <span class="title">HTML</span>
+                        <div class="skill-bar html">
+                            <span class="skill-per">
+                                <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">CSS</span>
+                        <div class="skill-bar css">
+                            <span class="skill-per">
+                                <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">JavaScript</span>
+                        <div class="skill-bar">
+                            <span class="skill-per javaScript">
+                                <span class="tooltip">70%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">Java</span>
+                        <div class="skill-bar">
+                            <span class="skill-per java">
+                                <span class="tooltip">50%</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="projects">
+            <div class="top-header">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-container">
+                <div class="project-box">
+                    <i class="fa fa-briefcase"></i>
+                    <h3>Completed</h3>
+                    <label>20+ projects completed</label>
+                </div>
+                <div class="project-box">
+                    <i class="fa fa-users"></i>
+                    <h3>Clients</h3>
+                    <label>50+ Happy clients</label>
+                </div>
+                <div class="project-box">
+                    <i class="fa fa-award"></i>
+                    <h3>Experience</h3>
+                    <label>1+ years in web development</label>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" id="contact">
+            <div class="top-header">
+                <h1>Let's work together</h1>
+                <span>Do you have a project in your mind? Contact me here:</span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="contact-info">
+                        <h2>Find me <i class="fa fa-corner-right-down"></i></h2>
+                        <p><i class="fa fa-envelope"></i> Email: mdnoman51696@gmail.com</p>
+                        <p><i class="fa fa-phone"></i> Phone: 01704928958</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="from-control">
+                        <div class="from-inputs">
+                            <input type="text" class="input-field" placeholder="your Email">
+                            <input type="text" class="input-field" placeholder="your Name">
+                        </div>
+                            <div class="text-area">
+                                <input type="text" class="input-subject" placeholder="subject">
+                                <textarea placeholder="message"></textarea>
+
+                            </div>
+                            <div class="from-button">
+                                <button class="btn">send <i class="fa fa-message"></i></button>
+
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#About">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#Contact">contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+<div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+<div class="icon"><i class="fa-brands fa-facebook"></i></div>
+<div class="icon"><i class="fa-brands fa-github"></i></div>
+
+
+        </div>
+        <div class="bottom-footer">
+            <p>copyright &copy; <a href="#home" style="text-decoration: none;">2025</a>-All right reserved by Md. Noman</p>
+
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="p.js"></script>
+</body>
+
+</html>
